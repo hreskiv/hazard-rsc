@@ -46,8 +46,14 @@ from the register are dropped, and no duplicates accumulate.
    ```
    /ip dns set cache-size=10240KiB cache-max-ttl=1d
 
-   /system scheduler add name=hazard interval=1d start-time=04:30:00 \
-     on-event="/tool fetch url=\"https://raw.githubusercontent.com/hreskiv/hazard-rsc/main/hazard_dns.rsc\" mode=https dst-path=hazard_dns.rsc; :delay 5s; /import file-name=hazard_dns.rsc"
+   # Update script: import only if the download actually finished.
+   # The file is ~6 MB, so a fixed delay is unreliable — gate on fetch status instead.
+   /system script add name=hazard-update source={
+     :local r [/tool fetch url="https://raw.githubusercontent.com/hreskiv/hazard-rsc/main/hazard_dns.rsc" mode=https dst-path=hazard_dns.rsc as-value];
+     :if (($r->"status")="finished") do={ /import file-name=hazard_dns.rsc } else={ :log error "hazard: fetch failed" }
+   }
+
+   /system scheduler add name=hazard interval=1d start-time=04:30:00 on-event="/system script run hazard-update"
    ```
 
 ## Notes
