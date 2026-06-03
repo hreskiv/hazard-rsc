@@ -1,0 +1,39 @@
+name: hazard-rsc
+
+# Once a day: generate hazard_dns.rsc from the MF register and commit it to the repo.
+# The router fetches the ready file over HTTPS (raw.githubusercontent.com).
+on:
+  schedule:
+    - cron: '17 3 * * *'      # daily ~03:17 UTC (not on :00 — GitHub Actions delays there)
+  workflow_dispatch:          # manual run button
+
+permissions:
+  contents: write             # to commit the generated .rsc
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install deps
+        run: pip install requests idna
+
+      - name: Generate hazard_dns.rsc
+        run: python parse_hazard_dns.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add hazard_dns.rsc
+          if git diff --staged --quiet; then
+            echo "Register unchanged — nothing to commit"
+          else
+            git commit -m "update hazard_dns.rsc ($(date -u +%Y-%m-%d))"
+            git push
+          fi
