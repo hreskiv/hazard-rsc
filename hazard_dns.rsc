@@ -1,4 +1,6 @@
 /ip dns static remove [find comment="hazard-list"]
+/ip dns static add type=A address=145.237.235.240 name="www.zony.gg" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="zony.gg" match-subdomain=yes comment="hazard-list"
 /ip dns static add type=A address=145.237.235.240 name="www.kasynomega.pl" match-subdomain=yes comment="hazard-list"
 /ip dns static add type=A address=145.237.235.240 name="kasynomega.pl" match-subdomain=yes comment="hazard-list"
 /ip dns static add type=A address=145.237.235.240 name="fatpirate-0925.com" match-subdomain=yes comment="hazard-list"
