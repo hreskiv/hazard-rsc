@@ -1,4 +1,9 @@
 /ip dns static remove [find comment="hazard-list"]
+/ip dns static add type=A address=145.237.235.240 name="www.vavada.net.pl" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="vavada.net.pl" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="betsolid1015.com" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="www.betsolid1015.com" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="support.betsolid1015.com" match-subdomain=yes comment="hazard-list"
 /ip dns static add type=A address=145.237.235.240 name="legiano-4406.com" match-subdomain=yes comment="hazard-list"
 /ip dns static add type=A address=145.237.235.240 name="legiano-4387.com" match-subdomain=yes comment="hazard-list"
 /ip dns static add type=A address=145.237.235.240 name="legiano-4366.com" match-subdomain=yes comment="hazard-list"
