@@ -1,4 +1,8 @@
 /ip dns static remove [find comment="hazard-list"]
+/ip dns static add type=A address=145.237.235.240 name="www.winna.win" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="www.winna.com" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="winna.win" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="winna.com" match-subdomain=yes comment="hazard-list"
 /ip dns static add type=A address=145.237.235.240 name="eu-rainbet.com" match-subdomain=yes comment="hazard-list"
 /ip dns static add type=A address=145.237.235.240 name="www.eu-rainbet.com" match-subdomain=yes comment="hazard-list"
 /ip dns static add type=A address=145.237.235.240 name="www.vavada.net.pl" match-subdomain=yes comment="hazard-list"
