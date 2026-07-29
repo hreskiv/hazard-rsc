@@ -1,4 +1,8 @@
 /ip dns static remove [find comment="hazard-list"]
+/ip dns static add type=A address=145.237.235.240 name="www.katowice-kasyno.pl" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="katowice-kasyno.pl" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="www.totalcasino-site.com" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="totalcasino-site.com" match-subdomain=yes comment="hazard-list"
 /ip dns static add type=A address=145.237.235.240 name="minutor-energia.pl" match-subdomain=yes comment="hazard-list"
 /ip dns static add type=A address=145.237.235.240 name="www.staxino.com" match-subdomain=yes comment="hazard-list"
 /ip dns static add type=A address=145.237.235.240 name="staxino.com" match-subdomain=yes comment="hazard-list"
