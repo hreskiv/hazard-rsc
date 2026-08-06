@@ -1,4 +1,12 @@
 /ip dns static remove [find comment="hazard-list"]
+/ip dns static add type=A address=145.237.235.240 name="kubadpz-poleca-nvcasino.vercel.app" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="kubadpz-exclusive-bonus.vercel.app" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="www.spinoloco.casino" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="spinoloco.casino" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="www.spinolococasino.org" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="spinolococasino.org" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="vipstacasino.net" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="www.vipstacasino.net" match-subdomain=yes comment="hazard-list"
 /ip dns static add type=A address=145.237.235.240 name="kazeeno2.com" match-subdomain=yes comment="hazard-list"
 /ip dns static add type=A address=145.237.235.240 name="kazeeno1.com" match-subdomain=yes comment="hazard-list"
 /ip dns static add type=A address=145.237.235.240 name="www.kazeeno2.com" match-subdomain=yes comment="hazard-list"
