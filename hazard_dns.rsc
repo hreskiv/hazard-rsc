@@ -1,4 +1,12 @@
 /ip dns static remove [find comment="hazard-list"]
+/ip dns static add type=A address=145.237.235.240 name="www.kasynobezdepozytu.com" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="kasynobezdepozytu.com" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="www.weszlo.fm" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="weszlo.fm" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="www.grantchojna.pl" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="grantchojna.pl" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="www.maluszekna6plus.pl" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="maluszekna6plus.pl" match-subdomain=yes comment="hazard-list"
 /ip dns static add type=A address=145.237.235.240 name="casinozondercruks.rnvb.nl" match-subdomain=yes comment="hazard-list"
 /ip dns static add type=A address=145.237.235.240 name="gereedschapwinkelplein.nl" match-subdomain=yes comment="hazard-list"
 /ip dns static add type=A address=145.237.235.240 name="www.gereedschapwinkelplein.nl" match-subdomain=yes comment="hazard-list"
