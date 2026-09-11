@@ -1,4 +1,8 @@
 /ip dns static remove [find comment="hazard-list"]
+/ip dns static add type=A address=145.237.235.240 name="www.spinnyx.casino" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="www.spinnyx.com" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="spinnyx.casino" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="spinnyx.com" match-subdomain=yes comment="hazard-list"
 /ip dns static add type=A address=145.237.235.240 name="m.uniqueclub.pl" match-subdomain=yes comment="hazard-list"
 /ip dns static add type=A address=145.237.235.240 name="nv.uniqueclub.pl" match-subdomain=yes comment="hazard-list"
 /ip dns static add type=A address=145.237.235.240 name="www.uniqueclub.pl" match-subdomain=yes comment="hazard-list"
