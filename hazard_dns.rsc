@@ -1,4 +1,8 @@
 /ip dns static remove [find comment="hazard-list"]
+/ip dns static add type=A address=145.237.235.240 name="badboy-spinbara.vercel.app" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="badboy-nv.vercel.app" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="www.adwokat-nadwodny.pl" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="adwokat-nadwodny.pl" match-subdomain=yes comment="hazard-list"
 /ip dns static add type=A address=145.237.235.240 name="www.xon-bet.info.pl" match-subdomain=yes comment="hazard-list"
 /ip dns static add type=A address=145.237.235.240 name="xon-bet.info.pl" match-subdomain=yes comment="hazard-list"
 /ip dns static add type=A address=145.237.235.240 name="www.xon-bet.biz.pl" match-subdomain=yes comment="hazard-list"
