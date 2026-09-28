@@ -1,4 +1,10 @@
 /ip dns static remove [find comment="hazard-list"]
+/ip dns static add type=A address=145.237.235.240 name="www.kingspin2.io" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="www.kingspin.io" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="kingspin2.io" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="kingspin.io" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="www.luckera-pl.com" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="luckera-pl.com" match-subdomain=yes comment="hazard-list"
 /ip dns static add type=A address=145.237.235.240 name="www.lottoland.net.pl" match-subdomain=yes comment="hazard-list"
 /ip dns static add type=A address=145.237.235.240 name="www.lotto-kasyno-online.com" match-subdomain=yes comment="hazard-list"
 /ip dns static add type=A address=145.237.235.240 name="www.lottocasino.net.pl" match-subdomain=yes comment="hazard-list"
