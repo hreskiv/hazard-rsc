@@ -1,4 +1,12 @@
 /ip dns static remove [find comment="hazard-list"]
+/ip dns static add type=A address=145.237.235.240 name="badboy-palace.vercel.app" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="badboy-mrpunter.vercel.app" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="www.bisoncasino.bz" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="www.bisoncasino3.io" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="bisoncasino.bz" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="bisoncasino3.io" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="www.lemoncasino14.io" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="lemoncasino14.io" match-subdomain=yes comment="hazard-list"
 /ip dns static add type=A address=145.237.235.240 name="www.goldbet-casino.co.pl" match-subdomain=yes comment="hazard-list"
 /ip dns static add type=A address=145.237.235.240 name="goldbet-casino.co.pl" match-subdomain=yes comment="hazard-list"
 /ip dns static add type=A address=145.237.235.240 name="www.goldbet-pl.com.pl" match-subdomain=yes comment="hazard-list"
