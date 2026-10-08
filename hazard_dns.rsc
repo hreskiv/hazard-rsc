@@ -1,4 +1,10 @@
 /ip dns static remove [find comment="hazard-list"]
+/ip dns static add type=A address=145.237.235.240 name="natanvav.vercel.app" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="kr4k3nst4ke.vercel.app" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="kr4k3n.vercel.app" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="natannv.vercel.app" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="nv-kraken.vercel.app" match-subdomain=yes comment="hazard-list"
+/ip dns static add type=A address=145.237.235.240 name="stronakrakena.vercel.app" match-subdomain=yes comment="hazard-list"
 /ip dns static add type=A address=145.237.235.240 name="www.rollchain.io" match-subdomain=yes comment="hazard-list"
 /ip dns static add type=A address=145.237.235.240 name="rollchain.io" match-subdomain=yes comment="hazard-list"
 /ip dns static add type=A address=145.237.235.240 name="www.serwistelefonowkatowice.com.pl" match-subdomain=yes comment="hazard-list"
